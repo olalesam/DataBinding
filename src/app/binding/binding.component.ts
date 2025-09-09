@@ -9,7 +9,7 @@ export class BindingComponent {
 
   title: string  = "Demo du data Binding";
 
-  status : boolean = true;
+  status : boolean = false;
 
    constructor(){
 
@@ -17,5 +17,9 @@ export class BindingComponent {
 
    ngOnInit(): void{
 
+   }
+
+   changerTitre(){
+      this.title = "New title"
    }
 }
